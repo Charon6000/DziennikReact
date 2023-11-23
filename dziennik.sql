@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Lis 23, 2023 at 01:47 AM
+-- Generation Time: Lis 23, 2023 at 06:39 PM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.0.30
 
@@ -107,8 +107,8 @@ CREATE TABLE `uczniowie` (
 --
 
 INSERT INTO `uczniowie` (`id`, `imie`, `nazwisko`, `plec`, `klasa`) VALUES
-(1, 'Anna', 'Kowalska', 0, 1),
-(2, 'Jan', 'Nowak', 1, 2),
+(1, 'Hubert', 'Witus', 1, 4),
+(2, 'Jakub', 'Bobkowski', 0, 2),
 (3, 'Aleksandra', 'Wiśniewska', 0, 3),
 (4, 'Piotr', 'Kaczmarek', 1, 1),
 (5, 'Magdalena', 'Lewandowska', 0, 2),

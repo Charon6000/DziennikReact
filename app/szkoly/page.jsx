@@ -15,19 +15,19 @@ export default function Strona()
     },[])
     return(
         <>
-        <table>
+        <table class="font-serif table-auto w-full text-white bg-blue-700 text-center">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Nazwa</th>
+                    <th class="border-4 border-orange-700 text-xl">ID</th>
+                    <th class="border-4 border-orange-700 text-xl">Nazwa</th>
                 </tr>
             </thead>
             <tbody>
                 {uczniowie.map((ucz, index)=>{
                     return (
                         <tr>
-                            <td>{ucz.id}</td>
-                            <td>{ucz.nazwa}</td>
+                            <td class="border-4 border-green-700 text-lg">{ucz.id}</td>
+                            <td class="border-4 border-green-700 text-lg">{ucz.nazwa}</td>
                         </tr>
                     )
                 }
