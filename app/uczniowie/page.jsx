@@ -1,4 +1,5 @@
 "use client"
+import Formularzuczniow from '@/components/Formularzuczniow';
 import {useState, useEffect} from 'react';
 
 export default function Strona()
@@ -40,6 +41,7 @@ export default function Strona()
                 )}
             </tbody>
         </table>
+        <Formularzuczniow setUczniowie={setUczniowie}/>
         </>
     )
 

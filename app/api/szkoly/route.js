@@ -15,3 +15,18 @@ export async function GET(request)
     conn.end();
     return NextResponse.json(rows);
 }
+
+export async function POST(request)
+{
+    const conn = await mysql.createConnection(
+        {
+            host: 'localhost',
+            user: 'root',
+            database: 'dziennik'
+        }
+    )
+    const body = await request.json();
+    const [rows] = await conn.execute("INSERT INTO szkoly (nazwa) VALUES (?)",[body.nazwa]);
+    conn.end();
+    return NextResponse.json(rows);
+}
