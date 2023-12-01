@@ -41,7 +41,7 @@ export default function Strona()
                 )}
             </tbody>
         </table>
-        <Formularzuczniow setUczniowie={setUczniowie}/>
+        <Formularzuczniow uczniowie={uczniowie}/>
         </>
     )
 
